@@ -1,0 +1,522 @@
+/*this css library created by Erkin Berk Türe  for ceng367 midterm exam*/
+
+
+/*  FUNCTIONALITIES AND COMPONENTS
+->  RESPONSIVE NAVBAR DROPDOWN MENU
+->  UNIQUE SLIDE COMPONENT
+->  BUTTON BOX SECTION
+->  DUYURULAR SECTION
+->  ETKINLIKLER SECTION
+->  SLIDE HABERLER SECTION
+->  KAMPUSTE YASAM SECTION
+->  ARASTIRMA SERVISLERI SECTION
+->  FOOTER SECTION
+
+
+->  COLUMN AND ROW CLASS WITH DIFFERENT WIDTH RATIOS
+->  2 DIFFERENT BUTTON CLASS
+->  1 HOVER ANIMATION BUTTON CLASS
+->  DROPDOWN
+->  SLIDER1
+->  SLIDER2
+->  2 ANCHOR CLASS
+AND MORE
+*/
+
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*HEADER*/
+section.header{
+    width: 100%;
+    display: table;
+    flex: 1;
+}
+.logov{
+    width: 100%;
+    display: table;
+    flex: 1;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo{
+    float:left;
+    width: 18.33%;
+}
+.gazi{
+    cursor:pointer;
+    margin-top: 17px;
+    float:left;
+    width: 48.33%;
+    text-align: start;
+    font-family: 'Cinzel', serif;
+    color:#707070;
+}
+.Atam{
+    float:right;
+    margin-right: 40px;
+    width:23.33%;
+}
+.gazibar{
+    
+    height: 50px;
+    width: 100%;
+    background-color: #2A4173;
+    display: table;
+    flex: 1;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.searcbox{
+    display: inline;
+    width: 15%;
+    text-align: center;
+}
+.searchgazi{
+    height: 30px;
+    border-radius: 3%;
+    border: 0px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-right: 15px;
+    z-index: 0;
+    float: left;
+}
+.buyutec{
+    float: left;
+    height: 28px;
+    border-radius: 3%;
+    margin-left: -50px;
+    margin-top: 9px;
+    margin-bottom: 7px;
+    z-index: 1;
+    color: black !important;
+}
+.dil{
+    cursor: pointer;
+    color:#A0AAC0;
+}
+.menus{
+    float: left;
+    width: 70.33%;
+}
+.ek{
+    margin-right: 20px;
+    margin-top: 4px;
+    float:right;
+    width: 7.33%;
+}
+.tuslar{
+    color: #FFFFFF;
+    background: transparent;
+    border: 0px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 7px;
+}
+
+
+
+
+
+/*TUŞ yani button*/
+.tus{
+    color: #FFFFFF;
+    background: transparent;
+    border: 0px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.protus{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 50px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+}
+.protus:hover,.protus:active{
+    background-color: #a0aac0;
+}
+
+
+/*Dropdown menu*/
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.droptus {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 50px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+  }
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #55678f;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-menu a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown:hover .dropdown-menu {
+      display: block;
+      transition: 1s;
+    }
+
+  .dropdown-menu a:hover {
+      background-color: #a0aac0;
+    }
+
+
+
+    /*SECTION 3 postların linklerinin bulunduğu alan (duyuru,etinik,haber)*/
+
+  .posts{
+    box-sizing: border-box;
+  }
+  .duyurular li::before {
+    list-style-type: none;
+    content: '\1F4C4';
+    margin-left: -20px;
+    margin-right: 10px; /*hide the bullet trick*/
+  }
+  .etkinlikler{
+    /*dursun lazım olur bi gün*/
+  }
+  .haberler{
+    /*dursun lazım olur bi gün*/
+  }
+  .gazihr{/*renk kodu tesadüf mü?:)*/
+    color: #cccccc;
+    border: 1px solid #cccccc;
+    margin-right: 10%;
+    margin-left: 0%;
+  }
+  .gazihrlight{
+    color: #e5e5e5;
+    border: 1px solid #e5e5e5;
+    margin-right: 20%;
+    margin-left: 0%;
+  }
+  .gaziheader{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    color:#414042;
+  }
+  .gazianchor{
+    color: #2A4173;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .gazianchor2{
+    color:#414042;
+    font-weight: 900;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .gazianchor2:hover,.gazianchor2:active,.gazianchor:hover,.gazianchor:active{
+    color: #f18419;
+    cursor: pointer;
+  }
+  .gazidate{
+    font-family: 'Montserrat', sans-serif;
+    color: #959595;
+    font-weight: 900;
+  }
+  .gazidate2{
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 10px;
+    margin-right: 10px;
+    max-width: 75px;
+    height: 75px;
+    color:#FFFFFF;
+    background-color: #2A4173;
+  }
+  .slider2{
+    margin-left: 30px;
+    max-width: 300px;
+    max-height: 250px;
+  }
+
+
+
+
+  /*button grup yapısı */
+.butonlar{
+  margin-top: 75px;
+  width: 100%;
+  height: auto;
+  background-color: #707070;
+}
+.buton{
+  margin-top: 20px ;
+  margin-bottom: 5px ;
+  height: 82px;
+  width: 82px;
+  border-radius: 50%;
+  border: 3px solid white;
+  background-color: transparent;
+  color: #FFFFFF;
+}
+.gaziicon{
+  font-size: 50px;
+}
+.buton:hover,.buton:active{
+  
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  transition-duration: 0.5s;
+}
+.butontext{
+  text-transform: uppercase;
+  padding-left: 12px;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  color:#FFFFFF;
+  
+}
+
+
+
+/*
+    SLIDE1
+*/
+
+  .slider {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .slide {
+    display: none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .slide:first-child {
+    display: block;
+  }
+  
+  .slide:nth-of-type(1) {
+    background-image: url("http://gazi.edu.tr/upload/1/2017/9/12/0112ca2029720f9bec2e5be81fc2d712b32de125-gazi-slider.jpg");
+    background-size: cover;
+  }
+  
+  .slide:nth-of-type(2) {
+    background-image: url("http://gazi.edu.tr/upload/1/2017/9/12/179195fd314334da0390f35d06ec24ca97f2008e-gazi-slider.jpg");
+    background-size: cover;
+  }
+  
+  .slide:nth-of-type(3) {
+    background-image: url("http://gazi.edu.tr/upload/1/2020/12/2/b4c55305ec7ffd1b5699f1470e777bd7757f632f-gazi-slider.jpg");
+    background-size: cover;
+  }
+  
+  .slide:nth-of-type(4) {
+    background-image: url("http://gazi.edu.tr/upload/1/2020/12/1/0eec809b8d0d65accdb2d79e5a77759f2f63da52-gazi-slider.jpg");
+    background-size: cover;
+    }
+  .slide:nth-of-type(5) {
+    background-image: url("http://gazi.edu.tr/upload/1/2020/12/2/3c92cc477243093981c8f766e8b7b6374a9ec67f-gazi-slider.jpg");
+    background-size: cover;
+  }
+
+  .slide_viewer {
+    height: 420px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slide_group {
+    height: 100%;
+    position: relative;
+    width: 100%;
+  }
+  .slide_buttons {
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+  }
+  
+  a.slide_tus {
+    color: #a0aac0;
+    font-size: 42px;
+    margin: 0 0.175em;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .slide_tus.active, .slide_tus:hover {
+    color: #2a4173;
+    cursor: pointer;
+  }
+
+
+  /*slide2 haberler için modifiye edilmiş hali*/
+
+  
+  .slider2 {
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 900px;/*toggle olunca iç içe girmesinler mobil view önemli(navbar toggle hariç)*/
+  }
+  .slide2 {
+    display: none;
+    height:168px;
+    position: absolute;
+    width: 311px;
+    margin-left: 50px;
+  }
+  
+  .slide2:first-child {
+    display: block;
+  }
+  
+  .slide2:nth-of-type(1) {
+    padding-top: -25px;
+    background-image: url("http://gazi.edu.tr/upload/1/2020/12/2/47092ce0af5492434a66e4f77004f80bc64447f9-slider.jpg");
+    background-size: cover;
+  }
+  
+  .slide2:nth-of-type(2) {
+    background-image: url("http://gazi.edu.tr/upload/1/2020/12/2/5aeeae2a4681460421498d622a707fc38f521774-slider.jpg");
+    background-size: cover;
+  }
+  
+  .slide2:nth-of-type(3) {
+    background-image: url("http://gazi.edu.tr/upload/1/2020/12/2/695ac0c20d2eacaff547c755ef25bef45789c7b3-slider.jpg");
+    background-size: cover;
+  }
+  
+  .slide2:nth-of-type(4) {
+    background-image: url("http://gazi.edu.tr/upload/1/2020/12/1/0eac714a9394d3718576e3bdc36d861b6f456f0c-slider.jpg");
+    background-size: cover;
+    }
+  .slide2:nth-of-type(5) {
+    background-image: url("http://gazi.edu.tr/upload/1/2020/12/1/3e524b92683e047b913adf87e58cd737be6a89df-slider.jpg");
+    background-size: cover;
+  }
+
+  .slide_viewer2 {
+    height: 283px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slide_group2{
+    height: 100%;
+    position: relative;
+    width: 100%;
+  }
+  .slide_buttons2 {
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align:end;
+    margin-right: 150px;
+  }
+  
+  a.slide_tus2 {
+    color: #a0aac0;
+    font-size: 42px;
+    margin: 0 0.175em;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .slide_tus2.active, .slide_tus2:hover {
+    color: #2a4173;
+    cursor: pointer;
+  }
+
+  
+  /*my layout system columns and rows but not bootstraps grid and flex*/
+
+.column{
+  float: left;
+  width: 33.33%;
+}
+.column2{
+  float: left;
+  width: 10.00%;
+}
+.column4{
+  float: left;
+  width: 33.33%;
+}
+.column8{
+  float: left;
+  width: 63.33%;
+}
+.column25{
+  float: left;
+  width: 25%;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  
+}
+@media screen and (max-width:600px){
+  .column{
+    width: 100%;
+  }
+  .column2{
+    width: 100%;
+  }
+}
+
+
+/* SECTION bilgiler*/
+.bilgiler{
+  margin-top: 100px;
+}
+.flex{
+  display: inline;
+  flex: 1;
+}
+
+
+
+/*SECTION foooter*/
+.footer{
+  text-align: center;
+  height: 400px;
+  width: 100%;
+  margin-top: 60px;
+  background-color: #2A4173;
+  background-repeat: no-repeat;
+  background-image: url("https://sacitturanli.com/gaziLogo.png");
+}
+
+
+
+
+
+
